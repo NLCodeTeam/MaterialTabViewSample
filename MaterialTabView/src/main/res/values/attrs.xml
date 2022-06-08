@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaterialTabView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="tabBackground" format="reference" />
+        <attr name="textFirstTab" format="string" localization="suggested" />
+        <attr name="textSecondTab" format="string" localization="suggested" />
+        <attr name="iconFirstTab" format="reference" />
+        <attr name="iconSecondTab" format="reference" />
+        <attr name="backgroundFilledTint" format="reference|color" />
+        <attr name="backgroundUnfilledTint" format="reference|color" />
+        <attr name="drawableUnfilledTint" format="reference|color" />
+        <attr name="tabId" format="integer">
+            <enum name="first" value="0" />
+            <enum name="second" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tab_view_background"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tab_first"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/default_font_size"
+        android:textColor="@color/background_unfilled_color"
+        android:backgroundTint="@color/background_filled_color"
+        android:drawableTint="@color/background_unfilled_color"
+        app:iconGravity="textStart"
+        app:cornerRadius="@dimen/default_corner_radius"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tab_second"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="@dimen/default_font_size"
+        android:textColor="@color/background_filled_color"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/background_unfilled_color"
+        android:drawableTint="@color/background_filled_color"
+        app:iconGravity="textStart"
+        app:cornerRadius="@dimen/default_corner_radius"/>
+
+</LinearLayout>

@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tab = findViewById(R.id.materialTabView)
-        tab.setActiveTab(MaterialTabView.TAB.SECOND)
+       // tab.setActiveTab(MaterialTabView.TAB.FIRST)
         tab.setOnMaterialTabViewClickListener {
             tabId -> onTabClick(tabId)
         }

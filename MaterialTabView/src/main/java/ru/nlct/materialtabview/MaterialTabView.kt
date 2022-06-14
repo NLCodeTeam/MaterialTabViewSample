@@ -9,10 +9,10 @@ import android.view.View
 import android.widget.LinearLayout
 import com.google.android.material.button.MaterialButton
 
-class MaterialTabView(
+class MaterialTabView @JvmOverloads constructor(
     context: Context,
-    attrs: AttributeSet?,
-    defStyleAttr: Int
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
 ): LinearLayout(context, attrs, defStyleAttr), View.OnClickListener {
 
     private lateinit var firstTab: MaterialButton
@@ -60,15 +60,6 @@ class MaterialTabView(
     }
 
     init {
-        createView(context)
-        setParams(context, attrs)
-    }
-
-    constructor(context: Context) : this(context, null, 0) {
-        createView(context)
-    }
-
-    constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0) {
         createView(context)
         setParams(context, attrs)
     }
@@ -128,9 +119,13 @@ class MaterialTabView(
             compoundDrawableTintList = backgroundUnfilled
         }
         with(inactiveTab) {
+            elevation = 0f
+            translationZ = 0f
+            stateListAnimator = null
             setTextColor(drawableUnfilled)
             backgroundTintList = backgroundUnfilled
             compoundDrawableTintList = drawableUnfilled
+
         }
     }
 

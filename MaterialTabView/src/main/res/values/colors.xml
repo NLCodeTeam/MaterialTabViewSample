@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Цвета для MaterialTabView -->
     <color name="background_unfilled_color">#FFFFFD</color>
     <color name="background_filled_color" >@color/design_default_color_primary</color>
+
 </resources>

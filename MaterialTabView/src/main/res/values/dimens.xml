@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- dimens для MaterialTabView -->
     <dimen name="default_corner_radius">100dp</dimen>
     <dimen name="default_font_size">14sp</dimen>
+    <dimen name="tab_view_padding">4dp</dimen>
+
 </resources>
